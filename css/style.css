@@ -752,7 +752,7 @@ input {
   -webkit-appearance: none;
   appearance: none;
   background-color: #fff;
-  background-image: url(img/triangle.svg);
+  background-image: url(../img/triangle.svg);
   background-repeat: no-repeat, repeat;
   background-position: right .7em top 50%, 0 0;
   background-size: .65em auto, 100%;
@@ -977,19 +977,19 @@ input {
 }
 
 .about__tasks_hall {
-  background-image: url(img/tasks.png);
+  background-image: url(../img/tasks.png);
 }
 
 .about__tasks_room {
-  background-image: url(img/room.png);
+  background-image: url(../img/room.png);
 }
 
 .about__tasks_kitchen {
-  background-image: url(img/kitchen.png);
+  background-image: url(../img/kitchen.png);
 }
 
 .about__tasks_bathroom {
-  background-image: url(img/bathroom.png);
+  background-image: url(../img/bathroom.png);
 }
 
 .about__tasks_active {
@@ -2014,7 +2014,7 @@ input {
 }
 
 .advantages {
-  background-image: url(img/wood.png);
+  background-image: url(../img/wood.png);
   background-size: cover;
   background-position: center;
   padding-bottom: 5%;
@@ -2488,7 +2488,7 @@ input {
 }
 
 .feeds__block {
-  background-image: url(img/feeds-bg.png);
+  background-image: url(../img/feeds-bg.png);
   background-size: cover;
   padding-bottom: 5%;
 }
