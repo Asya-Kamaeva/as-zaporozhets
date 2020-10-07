@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Уборка квартир - Ozozon</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+  </head>
+  <body>
+    <wrapper>
+      <div class="callbtn"><a class="callbtn__link" href="tel:+74951111111"><img class="callbtn__icon" src="/img/callbtn.png" alt="callbtn"/></a></div>
+      <section class="general">
+        <div class="container"> 
+          <header class="header"><a class="header__logo" href="/"><span class="header__logo_color">o</span>zozon</a>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#aboutClean">Про уборки</a></li>
+                <li class="nav__item"><a class="nav__link" href="#order">Оформить заказ</a></li>
+                <li class="nav__item"><a class="nav__link" href="#aboutUs">О нас</a></li>
+                <li class="nav__item"><a class="nav__link" href="#feedsAboutUs">Отзывы</a></li>
+                <li class="nav__item"><a class="nav__link" href="#faq">F.A.Q.</a></li>
+                <li class="nav__item"><a class="nav__link" href="#sale">Акции</a></li>
+              </ul>
+            </nav><a class="header__phone" href="tel:+74958453444">+7(495)845-34-44</a><a class="header__btn" href="#">Войти</a>
+            <div class="hamburger"><span class="hamburger__menu"></span></div>
+          </header>
+          <div class="general__content">
+            <div class="general__block">
+              <h1 class="general__title">Уборка квартир в Москве и Подмосковье</h1>
+              <h2 class="general__desc">Идеальный порядок каждую неделю</h2><span class="general__price">от 1590 руб</span>
+            </div>
+            <form class="form" id="order">
+              <label class="form__block"><span class="form__name">Тип уборки</span>
+                <select class="form__select" size="1" name="cleaningType">
+                  <option class="form__item" value="support">Поддерживающая</option>
+                  <option class="form__item" value="general">Генеральная</option>
+                </select>
+              </label>
+              <label class="form__block"><span class="form__name">Количество комнат</span>
+                <select class="form__select" size="1" name="size">
+                  <option class="form__item" value="1k">1-комнатная</option>
+                  <option class="form__item" value="2k">2-комнатная</option>
+                  <option class="form__item" value="3k">3-комнатная</option>
+                  <option class="form__item" value="4k">4-комнатная</option>
+                </select>
+              </label>
+              <input class="form__input" type="submit" value="Оформить заявку"/>
+            </form>
+            <div class="general__text" id="sale">Закажите уборку на завтра прямо сейчас и получите СКИДКУ 15%.<br>Промокод: <span class="general__text_color">YESTERDAY</span></div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="aboutClean">
+        <div class="container">
+          <h3 class="about__title">Про уборки</h3>
+          <p class="about__desc">Клинер приедет со всем необходимым для уборки. Стоимость уборки рассчитывается от количества комнат.</p>
+          <div class="about__block"><span class="about__text">В каждый тариф входит уборка:</span>
+            <ul class="about__list">
+              <li class="about__item">В комнате</li>
+              <li class="about__item about__item_active">На кухне</li>
+              <li class="about__item">В ванной и туалете</li>
+              <li class="about__item">В коридоре</li>
+            </ul>
+          </div>
+          <div class="about__img" id="aboutImg">
+            <ul class="about__tasks about__tasks_room">
+              <li class="about__each"> <span class="about__each_text">Мойка радиатора<br>отопления</span></li>
+              <li class="about__each"> <span class="about__each_text">Очистка включателей<br>и дверных ручек</span></li>
+              <li class="about__each"> <span class="about__each_text">Вычищаем пыль<br>из углов</span></li>
+              <li class="about__each"> <span class="about__each_text">Протираем плинтусы</span></li>
+              <li class="about__each"> <span class="about__each_text">Чистим зеркала<br>и стеклянные<br>поверхности</span></li>
+              <li class="about__each"> <span class="about__each_text">Пылесосим ковры</span></li>
+              <li class="about__each"> <span class="about__each_text">Моем пол</span></li>
+              <li class="about__each"> <span class="about__each_text">Протираем<br>мебель</span></li>
+              <li class="about__each"> <span class="about__each_text">Обеспыливание<br>светильников</span></li>
+              <li class="about__each"> <span class="about__each_text">Убираем мусор</span></li>
+            </ul>
+            <ul class="about__tasks about__tasks_kitchen about__tasks_active">
+              <li class="about__each"> <span class="about__each_text">Моем плиту, холодильник и<br>другую бытовую технику</span></li>
+              <li class="about__each"> <span class="about__each_text">Моем плитку</span></li>
+              <li class="about__each"> <span class="about__each_text">Удаляем все виды<br>жировых отложений</span></li>
+              <li class="about__each"> <span class="about__each_text">Протираем шкафчики</span></li>
+              <li class="about__each"> <span class="about__each_text">Моем посуду</span></li>
+              <li class="about__each"> <span class="about__each_text">Убираем мусор</span></li>
+              <li class="about__each"> <span class="about__each_text">Протираем двери</span></li>
+              <li class="about__each"> <span class="about__each_text">Очищаем выключатели и дверные ручки</span></li>
+              <li class="about__each"> <span class="about__each_text">Обеспыливание<br>светильников</span></li>
+              <li class="about__each"> <span class="about__each_text">Чистим раковину</span></li>
+              <li class="about__each"> <span class="about__each_text">Вычищаем пыль<br>из углов</span></li>
+              <li class="about__each"> <span class="about__each_text">Протираем столешницу,<br>обеденный стол</span></li>
+              <li class="about__each"> <span class="about__each_text">Протираем плинтусы</span></li>
+              <li class="about__each"> <span class="about__each_text">Моем пол</span></li>
+            </ul>
+            <ul class="about__tasks about__tasks_bathroom">
+              <li class="about__each"> <span class="about__each_text">Очищаем кафель в ванной<br>от всех загрязнений</span></li>
+              <li class="about__each"> <span class="about__each_text">Очистка включателей<br>и дверных ручек</span></li>
+              <li class="about__each"> <span class="about__each_text">Очищаем кафель в ванной<br>от всех загрязнений</span></li>
+              <li class="about__each"> <span class="about__each_text">Протираем<br>плинтусы</span></li>
+              <li class="about__each"> <span class="about__each_text">Чистим зеркала<br>и стеклянные<br>поверхности</span></li>
+              <li class="about__each"> <span class="about__each_text">Пылесосим ковры<br>и моем пол</span></li>
+              <li class="about__each"> <span class="about__each_text">Протираем двери</span></li>
+              <li class="about__each"> <span class="about__each_text">Протираем<br>шкафы</span></li>
+              <li class="about__each"> <span class="about__each_text">Убираем мусор</span></li>
+              <li class="about__each"> <span class="about__each_text">Моем и дезинфицируем<br>ванну, раковину, джакузи<br>душевую кабину<br>унитаз</span></li>
+            </ul>
+            <ul class="about__tasks about__tasks_hall">
+              <li class="about__each"> <span class="about__each_text">Чистим зеркала<br>и стеклянные<br>поверхности</span></li>
+              <li class="about__each"> <span class="about__each_text">Протираем<br>двери</span></li>
+              <li class="about__each"> <span class="about__each_text">Протираем все<br>доступные поверхности</span></li>
+              <li class="about__each"> <span class="about__each_text">Расставляем обувь</span></li>
+              <li class="about__each"> <span class="about__each_text">Очищаем выключатели<br>и дверные ручки</span></li>
+              <li class="about__each"> <span class="about__each_text">Протираем<br>плинтусы</span></li>
+              <li class="about__each"> <span class="about__each_text">Моем пол и<br>пылесосим коврики</span></li>
+            </ul>
+            <div class="about__part"><span class="about__part_item">Поддерживающая уборка</span><span class="about__part_item">Генеральная уборка</span></div>
+          </div>
+        </div>
+      </section>
+      <section class="types">
+        <div class="container">
+          <h3 class="types__title">Типы уборки</h3>
+          <ul class="types__content">
+            <li class="types__unit"> 
+              <div class="types__head"> 
+                <div class="types__capture">Поддерживающая</div>
+                <ul class="types__list">
+                  <li class="types__item">Протираем мебель сверху донизу</li>
+                  <li class="types__item">Чистим зеркала и стеклянные поверхности</li>
+                  <li class="types__item">Пылесосим ковры</li>
+                  <li class="types__item">Моем пол</li>
+                  <li class="types__item">Убираем мусор</li>
+                  <li class="types__item">Вычищаем пыль из углов</li>
+                  <li class="types__item">Протираем плинтусы</li>
+                </ul>
+              </div>
+              <div class="types__bottom">
+                <div class="types__block">
+                  <div class="types__block_part">
+                    <div class="types__block_text">Стоимость уборки:</div>
+                    <div class="types__block_desc">во всех комнатах</div>
+                  </div><span class="types__block_price">1590 руб.</span>
+                </div><a class="types__btn" href="#">Оформить заявку</a>
+              </div>
+            </li>
+            <li class="types__unit"> 
+              <div class="types__head"> 
+                <div class="types__capture types__capture_yellow">Генеральная</div>
+                <ul class="types__list">
+                  <li class="types__item">Протираем мебель сверху донизу</li>
+                  <li class="types__item">Чистим зеркала и стеклянные поверхности</li>
+                  <li class="types__item">Пылесосим ковры</li>
+                  <li class="types__item">Моем пол</li>
+                  <li class="types__item">Убираем мусор</li>
+                  <li class="types__item">Вычищаем пыль из углов</li>
+                  <li class="types__item">Протираем плинтусы</li>
+                </ul>
+                <div class="types__smallcapture">Генеральная:</div>
+                <ul class="types__list">
+                  <li class="types__plus">Мойка радиатора отопления</li>
+                  <li class="types__plus">Очистка выключателей и дверных ручек</li>
+                  <li class="types__plus">Обеспыливание настенных светильников</li>
+                </ul>
+              </div>
+              <div class="types__bottom">
+                <div class="types__block">
+                  <div class="types__block_part">
+                    <div class="types__block_text">Стоимость уборки:</div>
+                    <div class="types__block_desc">во всех комнатах</div>
+                  </div><span class="types__block_price">1990 руб.</span>
+                </div><a class="types__btn" href="#">Оформить заявку</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="counter">
+        <div class="container">
+          <div class="counter__content">
+            <div class="counter__left">
+              <h4 class="counter__title">Счетчик OZOZON</h4>
+              <div class="counter__data" id="date"></div>
+            </div>
+            <ul class="counter__right">
+              <li class="counter__item">
+                <div class="counter__number">16882</div><span class="counter__text">Квартир убрано</span>
+              </li>
+              <li class="counter__item">
+                <div class="counter__number">17</div><span class="counter__text">Сегодня в работе</span>
+              </li>
+              <li class="counter__item">
+                <div class="counter__number">2</div><span class="counter__text">Свободные клинеры</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="advantages" id="aboutUs">
+        <div class="container">
+          <h3 class="advantages__title">Вы обязательно останетесь довольны, ведь мы...</h3>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__img"><img src="/img/1.png" alt="advantages"/></div><span class="advantages__text">Используем только уникальные экологичные средства</span>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__img"><img src="/img/2.png" alt="advantages2"/></div><span class="advantages__text">Отбираем только самых лучших клинеров</span>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__img"><img src="/img/3.png" alt="advantages"/></div><span class="advantages__text">Используем особо эффективную технологию уборки </span>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__img"><img src="/img/4.png" alt="advantages"/></div><span class="advantages__text">Очень любим наших клиентов и предоставляем скидки</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="faq" id="faq">
+        <div class="container">
+          <h3 class="faq__title">Часто задаваемые вопросы</h3>
+          <ul class="faq__list">
+            <li class="faq__item"><span class="faq__text">По оплате</span>
+              <div class="faq__img"><img src="/img/pay.png" alt="pay"/></div>
+            </li>
+            <li class="faq__item faq__item_active"><span class="faq__text">По уборке</span>
+              <div class="faq__img"><img src="/img/clean.png" alt="clean"/></div>
+            </li>
+            <li class="faq__item"><span class="faq__text">По персоналу</span>
+              <div class="faq__img"><img src="/img/staff.png" alt="staff"/></div>
+            </li>
+          </ul>
+          <ol class="faq__part">
+            <li class="faq__unit">
+              <div class="faq__question">Как можно оплатить услуги?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Принимаете ли к оплате карты?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Вопрос 2?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Вопрос 3?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Вопрос 4?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Вопрос 5?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Вопрос 6?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+          </ol>
+          <ol class="faq__part faq__part_active">
+            <li class="faq__unit">
+              <div class="faq__question">Что входит в Ваши уборки?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Обязательно ли мое присутствие?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Чем вы убираетесь?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Что нужно предоставить клинеру для уборки?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Клинеру нужны чистые тряпочки?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Могу ли я дать клинеру чаевые? Должен ли я предупреждать вас об этом?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">У меня большая квартира. Как её считать?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Делаете ли вы уборку в выходные?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question"> Выезжаете ли вы в область за МКАД?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Что такое подписка и в чем ее преимущество?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Чем вы не занимаетесь?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+          </ol>
+          <ol class="faq__part">
+            <li class="faq__unit">
+              <div class="faq__question">Как выбираете сотрудников?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Проходят ли сотрудники доп обучение?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Вопрос 2?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Вопрос 3?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Вопрос 4?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Что такое подписка и в чем ее преимущество?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+            <li class="faq__unit">
+              <div class="faq__question">Чем вы не занимаетесь?</div>
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="feeds" id="feedsAboutUs">
+        <h3 class="feeds__title">Отзывы</h3>
+        <div class="feeds__block">
+          <div class="container">
+            <div class="feeds__content">
+              <div class="slider">
+                <div class="slider__part">
+                  <div class="slider__control slider__control_prev">&#9666;</div>
+                  <ul class="slider__list">
+                    <li class="slider__item"><img class="slider__img" src="/img/feeds1.png" alt="feeds"/></li>
+                    <li class="slider__item"><img class="slider__img" src="/img/feeds2.png" alt="feeds"/></li>
+                    <li class="slider__item"><img class="slider__img" src="/img/feeds3.png" alt="feeds"/></li>
+                  </ul>
+                  <div class="slider__control slider__control_next">&#9656;</div>
+                </div>
+              </div><a class="feeds__btn" href="#">Все отзывы</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </wrapper>
+    <script src="/main.js"></script>
+  </body>
+</html>

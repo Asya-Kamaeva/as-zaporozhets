@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        title Уборка квартир - Ozozon
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        wrapper
+            .callbtn
+                a(href="tel:+74951111111").callbtn__link
+                    img(src="/img/callbtn.png", alt="callbtn").callbtn__icon
+
+            section.general
+                .container 
+                    header.header
+                        a(href="/").header__logo <span class="header__logo_color">o</span>zozon
+                            
+                        nav.nav
+                            ul.nav__list
+                                each value, index in {'Про уборки' : '#aboutClean', 'Оформить заказ' : '#order', 'О нас' : '#aboutUs', 'Отзывы' : '#feedsAboutUs', 'F.A.Q.' : '#faq', 'Акции' : '#sale'}
+                                    li.nav__item
+                                        a(href=value).nav__link=index
+                        a(href="tel:+74958453444").header__phone +7(495)845-34-44
+                        
+                        a(href="#").header__btn Войти
+
+                        .hamburger
+                            span.hamburger__menu
+
+                    .general__content
+                        .general__block
+                            h1.general__title Уборка квартир в Москве и Подмосковье
+                            h2.general__desc Идеальный порядок каждую неделю
+                            span.general__price от 1590 руб
+                        
+                        form.form#order
+                            label.form__block
+                                span.form__name Тип уборки
+                                select(size="1" name="cleaningType").form__select
+                                    option(value="support").form__item Поддерживающая
+                                    option(value="general").form__item Генеральная
+                            label.form__block
+                                span.form__name Количество комнат
+                                select(size="1" name="size").form__select
+                                    option(value="1k").form__item 1-комнатная
+                                    option(value="2k").form__item 2-комнатная
+                                    option(value="3k").form__item 3-комнатная
+                                    option(value="4k").form__item 4-комнатная
+                            input(type="submit" value="Оформить заявку").form__input
+
+                        .general__text#sale Закажите уборку на завтра прямо сейчас и получите СКИДКУ 15%.<br>Промокод: <span class="general__text_color">YESTERDAY</span>
+
+            section.about#aboutClean
+                .container
+                    h3.about__title Про уборки
+                    p.about__desc Клинер приедет со всем необходимым для уборки. Стоимость уборки рассчитывается от количества комнат.
+                    .about__block
+                        span.about__text В каждый тариф входит уборка:
+                        ul.about__list
+                            each item in ['В комнате', 'На кухне', 'В ванной и туалете', 'В коридоре']
+                                if(item == 'На кухне')
+                                    li.about__item.about__item_active=item
+                                else
+                                    li.about__item=item
+
+                    .about__img(id="aboutImg")
+
+                        ul.about__tasks.about__tasks_room
+                            li.about__each 
+                                span.about__each_text Мойка радиатора<br>отопления
+                            li.about__each 
+                                span.about__each_text Очистка включателей<br>и дверных ручек
+                            li.about__each 
+                                span.about__each_text Вычищаем пыль<br>из углов
+                            li.about__each 
+                                span.about__each_text Протираем плинтусы
+                            li.about__each 
+                                span.about__each_text Чистим зеркала<br>и стеклянные<br>поверхности
+                            li.about__each 
+                                span.about__each_text Пылесосим ковры
+                            li.about__each 
+                                span.about__each_text Моем пол
+                            li.about__each 
+                                span.about__each_text Протираем<br>мебель
+                            li.about__each 
+                                span.about__each_text Обеспыливание<br>светильников
+                            li.about__each 
+                                span.about__each_text Убираем мусор
+                        
+                        ul.about__tasks.about__tasks_kitchen.about__tasks_active
+                            li.about__each 
+                                span.about__each_text Моем плиту, холодильник и<br>другую бытовую технику
+                            li.about__each 
+                                span.about__each_text Моем плитку
+                            li.about__each 
+                                span.about__each_text Удаляем все виды<br>жировых отложений
+                            li.about__each 
+                                span.about__each_text Протираем шкафчики
+                            li.about__each 
+                                span.about__each_text Моем посуду
+                            li.about__each 
+                                span.about__each_text Убираем мусор
+                            li.about__each 
+                                span.about__each_text Протираем двери
+                            li.about__each 
+                                span.about__each_text Очищаем выключатели и дверные ручки
+                            li.about__each 
+                                span.about__each_text Обеспыливание<br>светильников
+                            li.about__each 
+                                span.about__each_text Чистим раковину
+                            li.about__each 
+                                span.about__each_text Вычищаем пыль<br>из углов
+                            li.about__each 
+                                span.about__each_text Протираем столешницу,<br>обеденный стол
+                            li.about__each 
+                                span.about__each_text Протираем плинтусы
+                            li.about__each 
+                                span.about__each_text Моем пол
+
+                        ul.about__tasks.about__tasks_bathroom
+                            li.about__each 
+                                span.about__each_text Очищаем кафель в ванной<br>от всех загрязнений
+                            li.about__each 
+                                span.about__each_text Очистка включателей<br>и дверных ручек
+                            li.about__each 
+                                span.about__each_text Очищаем кафель в ванной<br>от всех загрязнений
+                            li.about__each 
+                                span.about__each_text Протираем<br>плинтусы
+                            li.about__each 
+                                span.about__each_text Чистим зеркала<br>и стеклянные<br>поверхности
+                            li.about__each 
+                                span.about__each_text Пылесосим ковры<br>и моем пол
+                            li.about__each 
+                                span.about__each_text Протираем двери
+                            li.about__each 
+                                span.about__each_text Протираем<br>шкафы
+                            li.about__each 
+                                span.about__each_text Убираем мусор
+                            li.about__each 
+                                span.about__each_text Моем и дезинфицируем<br>ванну, раковину, джакузи<br>душевую кабину<br>унитаз
+                            
+
+                        ul.about__tasks.about__tasks_hall
+                            li.about__each 
+                                span.about__each_text Чистим зеркала<br>и стеклянные<br>поверхности
+                            li.about__each 
+                                span.about__each_text Протираем<br>двери
+                            li.about__each 
+                                span.about__each_text Протираем все<br>доступные поверхности
+                            li.about__each 
+                                span.about__each_text Расставляем обувь
+                            li.about__each 
+                                span.about__each_text Очищаем выключатели<br>и дверные ручки
+                            li.about__each 
+                                span.about__each_text Протираем<br>плинтусы
+                            li.about__each 
+                                span.about__each_text Моем пол и<br>пылесосим коврики
+                        .about__part
+                            span.about__part_item Поддерживающая уборка
+                            span.about__part_item Генеральная уборка
+
+            section.types
+                .container
+                    h3.types__title Типы уборки
+                    ul.types__content
+                        li.types__unit 
+                            .types__head 
+                                .types__capture Поддерживающая
+                                ul.types__list
+                                    each item in ['Протираем мебель сверху донизу', 'Чистим зеркала и стеклянные поверхности', 'Пылесосим ковры', 'Моем пол', 'Убираем мусор', 'Вычищаем пыль из углов', 'Протираем плинтусы']
+                                        li.types__item=item
+                            .types__bottom
+                                .types__block
+                                    .types__block_part
+                                        .types__block_text Стоимость уборки:
+                                        .types__block_desc во всех комнатах
+
+                                    span.types__block_price 1590 руб.
+                                a(href="#").types__btn Оформить заявку
+
+                        li.types__unit 
+                            .types__head 
+                                .types__capture.types__capture_yellow Генеральная
+                                ul.types__list
+                                    each item in ['Протираем мебель сверху донизу', 'Чистим зеркала и стеклянные поверхности', 'Пылесосим ковры', 'Моем пол', 'Убираем мусор', 'Вычищаем пыль из углов', 'Протираем плинтусы']
+                                        li.types__item=item
+
+                                .types__smallcapture Генеральная:
+                                ul.types__list
+                                    each item in ['Мойка радиатора отопления', 'Очистка выключателей и дверных ручек', 'Обеспыливание настенных светильников']
+                                        li.types__plus=item
+                                
+                            .types__bottom
+                                .types__block
+                                    .types__block_part
+                                        .types__block_text Стоимость уборки:
+                                        .types__block_desc во всех комнатах
+
+                                    span.types__block_price 1990 руб.
+                                a(href="#").types__btn Оформить заявку
+
+            section.counter
+                .container
+                    .counter__content
+                        .counter__left
+                            h4.counter__title Счетчик OZOZON
+                            .counter__data(id="date")
+                        ul.counter__right
+                            li.counter__item
+                                .counter__number 16882
+                                span.counter__text Квартир убрано
+                            li.counter__item
+                                .counter__number 17
+                                span.counter__text Сегодня в работе
+                            li.counter__item
+                                .counter__number 2
+                                span.counter__text Свободные клинеры
+
+            section.advantages#aboutUs
+                .container
+                    h3.advantages__title Вы обязательно останетесь довольны, ведь мы...
+                    ul.advantages__list
+                        li.advantages__item
+                            .advantages__img
+                                img(src="/img/1.png", alt="advantages")
+                            span.advantages__text Используем только уникальные экологичные средства
+                        li.advantages__item
+                            .advantages__img
+                                img(src="/img/2.png", alt="advantages2")
+                            span.advantages__text Отбираем только самых лучших клинеров
+                        li.advantages__item
+                            .advantages__img
+                                img(src="/img/3.png", alt="advantages")
+                            span.advantages__text Используем особо эффективную технологию уборки 
+                        li.advantages__item
+                            .advantages__img
+                                img(src="/img/4.png", alt="advantages")
+                            span.advantages__text Очень любим наших клиентов и предоставляем скидки
+
+            section.faq#faq
+                .container
+                    h3.faq__title Часто задаваемые вопросы
+
+                    ul.faq__list
+                        li.faq__item
+                            span.faq__text По оплате
+                            .faq__img
+                                img(src="/img/pay.png", alt="pay")
+                        li.faq__item.faq__item_active
+                            span.faq__text По уборке
+                            .faq__img
+                                img(src="/img/clean.png", alt="clean")
+                        li.faq__item
+                            span.faq__text По персоналу
+                            .faq__img
+                                img(src="/img/staff.png", alt="staff")
+                    
+                    ol.faq__part
+                        li.faq__unit
+                            .faq__question Как можно оплатить услуги?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Принимаете ли к оплате карты?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Вопрос 2?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Вопрос 3?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Вопрос 4?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Вопрос 5?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Вопрос 6?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        
+
+                    ol.faq__part.faq__part_active
+                        li.faq__unit
+                            .faq__question Что входит в Ваши уборки?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Обязательно ли мое присутствие?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Чем вы убираетесь?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Что нужно предоставить клинеру для уборки?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Клинеру нужны чистые тряпочки?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Могу ли я дать клинеру чаевые? Должен ли я предупреждать вас об этом?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question У меня большая квартира. Как её считать?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Делаете ли вы уборку в выходные?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question  Выезжаете ли вы в область за МКАД?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Что такое подписка и в чем ее преимущество?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Чем вы не занимаетесь?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+
+                    ol.faq__part
+                        li.faq__unit
+                            .faq__question Как выбираете сотрудников?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Проходят ли сотрудники доп обучение?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Вопрос 2?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Вопрос 3?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Вопрос 4?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Что такое подписка и в чем ее преимущество?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+                        li.faq__unit
+                            .faq__question Чем вы не занимаетесь?
+                            p.faq__answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at, quod rem ab est assumenda, aut eaque nostrum quae libero eveniet? Exercitationem minus eius sunt voluptates voluptatibus facilis libero repellat!
+
+            section.feeds#feedsAboutUs
+                h3.feeds__title Отзывы
+                .feeds__block
+                    .container
+                        .feeds__content
+                            .slider
+                                
+                                .slider__part
+                                    .slider__control.slider__control_prev &#9666;
+                                    ul.slider__list
+                                        li.slider__item
+                                            img(src="/img/feeds1.png", alt="feeds").slider__img
+                                        li.slider__item
+                                            img(src="/img/feeds2.png", alt="feeds").slider__img
+                                        li.slider__item
+                                            img(src="/img/feeds3.png", alt="feeds").slider__img
+                                    
+                                    .slider__control.slider__control_next &#9656;
+                            a(href="#").feeds__btn Все отзывы
+                            
+
+
+                        
+
+
+
+
+        
+        script(src="/main.js")
+        
+
+                            
+
+
+
+
+
+
+
+
+                        
+
+
+
+
+            

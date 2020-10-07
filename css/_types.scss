@@ -1,0 +1,270 @@
+.types{
+    margin-bottom: 3.5%;
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        width: 77%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        @include desc{
+            width: 100%;
+        }
+
+        @include phones{
+            flex-direction: column;
+        }
+
+    }
+
+    &__unit{
+        width: 47%;
+        border-radius: 10px;
+        box-shadow: 0 0 14px 0.8px rgba(0, 0, 0, 0.1);
+
+        @include tablets{
+            width: 49%;
+        }
+
+        @include phones{
+            width: 100%;
+            margin-bottom: 3%;
+        }
+
+        &:hover{
+            box-shadow: 0 0 14px 0.8px rgba(0, 0, 0, 0.2);
+        }
+        
+    }
+
+    &__head{
+        padding: 8% 15%;
+        border-bottom: 2px solid #f6f6f5;
+        height: 464px;
+
+        @include tablets{
+            padding: 8% 8%;
+            height: 450px;
+        }
+
+        @include phones{
+            height: auto;
+        }
+    }
+
+    &__capture{
+        margin-left: 20%;
+        font-size: 24px;
+        margin-bottom: 9%;
+        position: relative;
+
+        @include desc{
+            font-size: 22px;
+        }
+
+        @include tablets{
+            font-size: 18px;
+            margin-left: 10%;
+        }
+
+        @include phones{
+            margin-left: 15%;
+            margin-bottom: 5%;
+        }
+
+        &::before{
+            position: absolute;
+            content: "";
+            left: -25px;
+            top: 4px;
+            width: 13px;
+            border-radius: 50%;
+            height: 13px;
+            border: solid 2px #ffffff;
+            background-color: #82eaae;
+
+            @include tablets{
+                width: 10px;
+                height: 10px;
+                left: -18px;
+                border: solid 1px #ffffff;
+            }
+            
+        }
+
+        &_yellow{
+            &:before{
+                color: "";
+                background-color: #f6ff00;
+            }
+        }
+    }
+
+    &__list{
+        margin-bottom: 9%;
+    }
+
+    &__item{
+        font-size: 16px;
+        font-weight: 300;
+        color: #212121;
+        margin-bottom: 2.5%;
+        position: relative;
+        padding-left: 10px;
+
+        @include tablets{
+            font-size: 15px;
+        }
+
+        &:before{
+            content: "";
+            position: absolute;
+            display: block;
+            left: -22px;
+            top: 5px;
+            transform: rotate(-45deg);
+            width: 9px;
+            height: 4px;
+            border-left: 1px solid #212121;
+            border-bottom: 1px solid #212121;
+            opacity: 0.3;
+
+            @include tablets{
+                left: -6px;
+            }
+        }
+    }
+
+    &__smallcapture{
+        padding-left: 10px;
+        margin-bottom: 2%;
+    }
+
+    &__plus{
+        font-size: 16px;
+        font-weight: 300;
+        color: #212121;
+        margin-bottom: 2%;
+        position: relative;
+        padding-left: 10px;
+
+        @include tablets{
+            font-size: 15px;
+        }
+
+        &:before{
+            content: "+";
+            position: absolute;
+            left: -26px;
+            color: #6fe0f2;
+
+            @include tablets{
+                left: -7px;
+            }
+        }
+    }
+
+
+
+    &__bottom{
+        padding: 8% 0% 7% 10%;
+
+        @include tablets{
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
+
+    &__block{
+        padding-left: 30px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 3.5%;
+
+        @media screen and (max-width: 1093px) {
+            padding-left: 0;
+           }
+
+        @include desc{
+            margin-bottom: 5%;
+        }
+
+        @include tablets{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include phones{
+            flex-direction: initial;
+            justify-content: space-between;
+        }
+
+        &_part{
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 0.75;
+            white-space: nowrap;
+
+            @include tablets{
+                text-align: center;
+            }
+        }
+
+        &_text{
+            margin-bottom: 5%;
+
+            @include tablets{
+                margin-bottom: 3%;
+            }
+        }
+
+        &_desc{
+            font-size: 14px;
+            color: #999999;
+        }
+
+        &_price{
+            margin-left: 4%;
+            font-size: 36px;
+            line-height: 0.8;
+
+            @include desc{
+                font-size: 34px;
+            }
+
+            @include tablets{
+                margin-left: 0;
+                font-size: 30px;
+                margin-top: 6%;
+            }
+
+            @include phones{
+                margin-top: 0;
+                font-size: 24px;
+                margin-left: 10px;
+            }
+        }
+        
+    }
+
+    &__btn{
+        text-align: center;
+        padding: 10px 10px;
+        display: block;
+        width: 43%;
+        min-width: 160px;
+        margin-left: 23%;
+        border-radius: 21px;
+        box-shadow: 0.3px 0.9px 4.8px 0.2px rgba(0, 0, 0, 0.2);
+        background-image: linear-gradient(to top, #82eaad, #6fe0f2);
+    
+        @include tablets{
+            margin-left: 0;
+        }
+    }
+
+}

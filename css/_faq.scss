@@ -1,0 +1,152 @@
+.faq{
+    background-color: #f8f8f8;
+    padding-bottom: 3%;
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3%;
+        width: 78%;
+        margin-left: 11%;
+        margin-top: 1%;
+
+        @include desc{
+            width: 100%;
+            margin-left: 0;
+        }
+        @include phones{
+            flex-direction: column;
+        }
+
+    }
+
+    &__item{
+        display: flex;
+        height: 116px;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 5%;
+        padding-right: 2%;
+        width: 30%;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px 0 rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+
+        @include desc{
+            width: 32%;
+            height: 90px;
+        }
+
+        @include tablets{
+            padding-left: 2%;
+            padding-right: 1%;
+            font-size: 15px;
+           
+            height: 65px;
+            justify-content: space-around;
+        }
+        @include phones{
+            width: 80%;
+            height: 50px;
+            margin-left: 10%;
+            margin-bottom: 2%;
+        }
+
+        &:hover{
+            box-shadow: 0px 5px 15px 0 rgba(0, 0, 0, 0.2);
+        }
+
+
+        &_active{
+            color: #4bd0e4;
+            box-shadow: 0px 5px 15px 0 rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    &__img{
+
+        @include desc{
+            object-fit: contain;
+            width: 65px;
+        }
+
+        @include tablets{
+            width: 40px;
+        }
+    }
+
+    &__part{
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px 0 rgba(0, 0, 0, 0.1);
+        width: 80%;
+        margin-left: 10%;
+        padding: 2% 10% 6%;
+        display: none;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content max-content max-content max-content max-content max-content;
+        grid-auto-flow: column;
+        grid-gap: 2% 5%;
+        min-height: 280px;
+
+        @include desc{
+            width: 100%;
+            margin-left: 0;
+            padding: 2% 7% 6%;
+        }
+
+        @include tablets{
+            grid-template-columns: 1fr;
+            grid-gap: inherit;
+            padding-left: 10%;
+            min-height: initial;
+            grid-template-rows: max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content;
+           
+        }
+        @include phones{
+            font-size: 15px;
+        }
+
+        &_active{
+            display: grid;
+        }
+    }
+
+    &__unit{
+        cursor: pointer;
+        list-style-type: inherit;
+        margin-bottom: 1%;
+
+        @include phones{
+            margin-bottom: 2%;
+        }
+
+    }
+
+    &__question{
+        line-height: 1.6;
+        padding-bottom: 1px;
+        border-bottom: 1px dashed #000;
+        display: inline;
+        
+        &:hover{
+            color: #4bd0e4;
+            border-bottom: 1px dashed #4bd0e4;
+        }
+    }
+
+    &__answer{
+        display: none;
+        padding-bottom: 1%;
+        padding-top: 2%;
+
+        @include tablets{
+            font-weight: 300;
+        }
+
+        &_active{
+            display: block;
+        }
+    }
+}

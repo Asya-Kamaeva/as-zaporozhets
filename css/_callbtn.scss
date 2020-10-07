@@ -1,0 +1,35 @@
+.callbtn{
+    width: 70px;
+    height: 70px;
+    opacity: 0.9;
+    background-color: #6fe0f1;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 100;
+    right: 6vw;
+    top: 12vh;
+
+    @include desc{
+        width: 60px;
+        height: 60px;
+    }
+
+    @include tablets{
+        width: 50px;
+        height: 50px;
+    }
+
+    &__link{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon{
+        @include tablets{
+            object-fit: contain;
+            width: 22px;
+        }
+    }
+}

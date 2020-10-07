@@ -1,0 +1,674 @@
+.about{
+    text-align: center;
+    margin-bottom: 2%;
+    
+    &__desc{
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 1.5%;
+
+        @include desc{
+            font-size: 17px;
+        }
+
+        @include tablets{
+            font-size: 16px;
+            margin-bottom: 3%;
+        }
+
+        @include tablets{
+            font-size: 15px;
+            margin-bottom: 5%;
+        }
+    }
+
+    &__title{
+        padding-bottom: 2%;
+    }
+
+    &__block{
+        display: flex;
+        font-size: 18px;
+        font-weight: 300;
+        justify-content: center;
+        margin-bottom: 2.5%;
+
+        @include desc{
+            font-size: 16px;
+            justify-content: space-around;
+        }
+
+        @include tablets{
+            flex-direction: column;
+        }
+    }
+
+    &__text{
+        @include tablets{
+            margin-bottom: 3%;
+        }
+        @include phones{
+            margin-bottom: 5%;
+        }
+    }
+
+    &__list{
+        display: flex;
+
+        @include tablets{
+            justify-content: space-around;
+        }
+        @include phones{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+
+    &__item{
+        margin-left: 30px;
+        padding-bottom: 2px;
+        opacity: 0.7;
+        border-bottom: 1px dashed #000;
+        cursor: pointer;
+
+        @include tablets{
+            margin-left: 0;
+            padding-bottom: 1px;
+        }
+
+        @include phones{
+            border-bottom: none;
+        }
+
+        &:hover{
+            color: #62d5e9;
+            border-bottom-color: transparent;
+        }
+
+        &_active{
+            color: #62d5e9;
+            border-bottom-color: transparent;
+        }
+    }
+
+    &__img{
+        width: 977px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        @include desc{
+            width: 768px;
+           
+        }
+
+        @include tablets{
+            width: 480px;
+            
+        }
+
+        @include phones{
+            width: 320px;
+           
+        }
+    }
+
+    &__tasks{
+        
+        width: 100%;
+        height: 551px;
+        display: none;
+        margin-bottom: 2%;
+        position: relative;
+        background-size: contain;
+        
+        @include desc{
+            height: 433px;
+        }
+
+        @include tablets{
+            height: 270px;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 0.8;
+        }
+
+        @include phones{
+            height: 180px;
+           
+        }
+        
+
+        &_hall{
+            background-image: url(/img/tasks.png);
+        }
+
+        &_room{
+            background-image: url(/img/room.png);
+        }
+
+        &_kitchen{
+            background-image: url(/img/kitchen.png);
+        }
+
+        &_bathroom{
+            background-image: url(/img/bathroom.png);
+        }
+
+        &_active{
+            display: block;
+        }
+    }
+
+    &__each{
+        position: absolute;
+        text-align: left;
+
+        @include phones{
+            display: none;
+        }
+
+        &_text{
+            font-size: 14px;
+            color: #ffffff;
+            position: relative;
+
+        &::before{
+            position: absolute;
+            content: "";
+            left: -22px;
+            width: 13px;
+            border-radius: 50%;
+            height: 13px;
+            border: solid 2px #ffffff;
+            background-color: #82eaae;
+
+            @include tablets{
+                width: 8px;
+                height: 8px;
+                border: solid 1px #ffffff;
+                left: -14px;
+            }
+            }
+        }
+    }
+
+    &__tasks_hall .about__each{
+        &:nth-child(1){
+            top: 27%;
+            left: 24%;
+        }
+
+        &:nth-child(2){
+            top: 55%;
+            left: 47%;
+        }
+
+        &:nth-child(3){
+            top: 84%;
+            left: 26%;
+
+            @include tablets{
+                top: 85%;
+                left: 17%;
+            }
+        }
+
+        &:nth-child(4){
+            top: 47%;
+            left: 71%;
+
+            .about__each_text:before{
+                content: "";
+                background-color: #f6ff00;
+            }
+        }
+
+        &:nth-child(5){
+            top: 63%;
+            left: 66%;
+            text-align: right;
+
+            @include tablets{
+                left: 61%;
+            }
+
+            .about__each_text:before{
+                content: "";
+                background-color: #f6ff00;
+                left: 104%;
+                top: 1%;
+            }
+        }
+
+        &:nth-child(6){
+            top: 87%;
+            left: 61%;
+            text-align: right;
+
+            @include tablets{
+                top: 81%;
+                left: 53%;
+            }
+
+            .about__each_text:before{
+                content: "";
+                left: 108%;
+                top: 1%;
+            }
+        }
+
+        &:nth-child(7){
+            top: 91%;
+            left: 78%;
+
+            @include tablets{
+                top: 85%;
+            }
+
+            .about__each_text:before{
+                content: "";
+                background-color: #f6ff00;
+            }
+        }
+    }
+
+    &__tasks_room .about__each{
+        &:nth-child(1){
+            top: 6%;
+            left: 5%;
+
+            .about__each_text:before{
+                content: "";
+                background-color: #f6ff00;
+            }
+        }
+
+        &:nth-child(2){
+            top: 54%;
+            left: 4%;
+
+            .about__each_text:before{
+                content: "";
+                background-color: #f6ff00;
+            }
+        }
+
+        &:nth-child(3){
+            top: 34%;
+            left: 33%;
+            text-align: right;
+
+            @include tablets{
+                left: 22%;
+            }
+
+
+            .about__each_text:before{
+                content: "";
+                left: 98%;
+                top: 97%;
+            }
+        }
+
+        &:nth-child(4){
+            top: 68%;
+            left: 20%;
+
+            @include tablets{
+                top: 71%;
+            }
+
+            .about__each_text:before{
+                content: "";
+                top: -45%;
+            }
+        }
+
+        &:nth-child(5){
+            top: 5%;
+            left: 53%;
+            
+        }
+
+        &:nth-child(6){
+            top: 91%;
+            left: 37%;
+
+            @include tablets{
+                top: 89%;
+            }
+
+           
+        }
+
+        &:nth-child(7){
+            top: 94%;
+            left: 65%;
+        }
+
+        &:nth-child(8){
+            top: 14%;
+            left: 85%;
+            text-align: right;
+
+            @include tablets{
+                left: 79%;
+            }
+
+
+            .about__each_text:before{
+                content: "";
+                left: 98%;
+                top: 97%;
+            }
+        }
+
+        &:nth-child(9){
+            top: 36%;
+            left: 82%;
+
+            @include tablets{
+                top: 35%;
+                left: 76%;
+            }
+
+
+            .about__each_text:before{
+                content: "";
+                background-color: #f6ff00;
+            }
+        }
+
+        &:nth-child(10){
+            top: 87%;
+            left: 82%;
+        }
+    }
+
+    &__tasks_kitchen .about__each{
+        &:nth-child(1){
+            top: 27%;
+            left: 10%;
+
+            @include tablets{
+                top: 20%;
+            }
+
+        }
+
+        &:nth-child(2){
+            top: 45%;
+            left: 25%;
+
+            @include tablets{
+                top: 42%;
+                left: 21%;
+            }
+
+
+        }
+
+        &:nth-child(3){
+            top: 59%;
+            left: 17%;
+            text-align: right;
+
+            @include tablets{
+                top: 63%;
+                left: 6%;
+            }
+
+
+            .about__each_text:before{
+                content: "";
+                left: 102%;
+                top: -38%;
+                background-color: #f6ff00;
+
+                @include tablets{
+                    top: 0;
+                }
+    
+            }
+        }
+
+        &:nth-child(4){
+            top: 28%;
+            left: 39%;
+
+            @include tablets{
+                top: 29%;
+                left: 50%;
+            }
+
+        }
+
+        &:nth-child(5){
+            top: 46%;
+            left: 42%;
+
+            .about__each_text:before{
+                content: "";
+                background-color: #f6ff00;
+            }
+            
+        }
+
+        &:nth-child(6){
+            top: 74%;
+            left: 32%;
+           
+        }
+
+        &:nth-child(7){
+            top: 83%;
+            left: 4%;
+        }
+
+        &:nth-child(8){
+            top: 93%;
+            left: 6%;
+           
+
+            .about__each_text:before{
+                content: "";
+                background-color: #f6ff00;
+            }
+        }
+
+        &:nth-child(9){
+            top: 36%;
+            left: 68%;
+
+            .about__each_text:before{
+                content: "";
+                background-color: #f6ff00;
+            }
+        }
+
+        &:nth-child(10){
+            top: 53%;
+            left: 40%;
+
+            @include tablets{
+                left: 33%;
+            }
+
+        }
+
+        &:nth-child(11){
+            top: 11%;
+            left: 63%;
+            text-align: right;
+
+            .about__each_text:before{
+                content: "";
+                left: 102%;
+                top: 103%;
+            }
+        }
+
+        &:nth-child(12){
+            top: 53%;
+            left: 65%;
+
+            .about__each_text:before{
+                content: "";
+                top: 70%;
+            }
+        }
+
+        &:nth-child(13){
+            top: 82%;
+            left: 61%;
+            text-align: right;
+
+            .about__each_text:before{
+                content: "";
+                left: 102%;
+            }
+        }
+
+        &:nth-child(14){
+            top: 93%;
+            left: 67%;
+        }
+    }
+
+    &__tasks_bathroom .about__each{
+        &:nth-child(1){
+            top: 9%;
+            left: 60%;
+
+            .about__each_text:before{
+                content: "";
+                top: 75%;
+                background-color: #f6ff00;
+            }
+        }
+
+        &:nth-child(2){
+            top: 54%;
+            left: 4%;
+
+            .about__each_text:before{
+                content: "";
+                background-color: #f6ff00;
+            }
+        }
+
+        &:nth-child(3){
+            top: 23%;
+            left: 78%;
+
+            @include tablets{
+                top: 25%;
+                left: 65%;
+            }
+
+            .about__each_text:before{
+                content: "";
+                top: 75%;
+                background-color: #f6ff00;
+            }
+        }
+
+        &:nth-child(4){
+            top: 87%;
+            left: 68%;
+
+            @include tablets{
+                top: 84%;
+                left: 67%;
+            }
+        }
+
+        &:nth-child(5){
+            top: 22%;
+            left: 31%;
+            
+        }
+
+        &:nth-child(6){
+            top: 91%;
+            left: 85%;
+
+            @include tablets{
+                top: 91%;
+                left: 83%;
+            }
+           
+        }
+
+        &:nth-child(7){
+            top: 85%;
+            left: 10%;
+        }
+
+        &:nth-child(8){
+            top: 71%;
+            left: 53%;
+
+            @include tablets{
+                top: 76%;
+                left: 46%;
+            }
+
+        }
+
+        &:nth-child(9){
+            top: 94%;
+            left: 37%;
+
+        }
+
+        &:nth-child(10){
+            top: 49%;
+            left: 77%;
+
+            @include tablets{
+                top: 50%;
+                left: 75%;
+            }
+        }
+    }
+
+
+
+
+    &__part{
+        display: flex;
+        justify-content: space-around;
+
+        @include phones{
+            display: none;
+        }
+    
+
+        &_item{
+            font-size: 16px;
+            font-weight: 300;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                content: "";
+                left: -22px;
+                width: 13px;
+                border-radius: 50%;
+                height: 13px;
+                border: solid 2px #ffffff;
+                background-color: #82eaae;
+            }
+
+            &:nth-child(2) {
+                &:before{
+                    background-color: #f6ff00;
+                    }
+            }
+                
+            
+        }
+    }
+}

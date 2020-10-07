@@ -1,0 +1,124 @@
+.slider{
+    display: flex;
+    width: 903px;
+    height: 371px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px 0 rgba(0, 0, 0, 0.1);
+
+    @include desc{
+        width: 700px;
+        margin-bottom: 4%;
+    }
+
+    @include tablets{
+        width: 440px;
+        height: 300px;
+    }
+
+    @include tablets{
+        width: 300px;
+        height: 280px;
+    }
+    
+
+    &__control{
+        width: 56px;
+        height: 56px;
+        background-color: #f0f0f0;
+        position: absolute;
+        border-radius: 50%;
+        top: calc(50% - 28px);
+        text-align: center;
+        padding-top: 18px;
+        font-size: 14px;
+        color: #666666;
+        cursor: pointer;
+
+        @include tablets{
+            width: 32px;
+            height: 32px;
+            top: calc(50% - 16px);
+            padding-top: 6px;
+        }
+        
+        &_prev{
+            left: -3%; 
+
+            @include tablets{
+                left: -2%;
+            }
+           
+        }
+
+        &_next{
+            left: 97%;
+
+            @include tablets{
+                left: 96%;
+            }
+
+            @include phones{
+                left: 92%;
+            }
+        }
+
+    }
+
+    &__part{
+        display: flex;
+        width: 790px;
+        height: 313px;
+        overflow: hidden;
+
+        @include desc{
+            width: 700px;
+        }
+
+        @include tablets{
+            width: 440px;
+        }
+        @include phones{
+            width: 300px;
+        }
+       
+    }
+
+    &__list{
+        display: flex;
+        height: 313px;
+        width: 10000px;
+        
+    }
+
+    &__item{
+        display: flex;
+        width: max-content;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        object-fit: contain;
+    
+    }
+
+    &__img{
+        
+        object-fit: contain;
+
+        @include desc{
+            width: 690px;
+        }
+        @include tablets{
+            width: 432px;
+        }
+
+    }
+
+    
+}
