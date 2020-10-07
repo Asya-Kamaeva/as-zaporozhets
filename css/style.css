@@ -251,7 +251,7 @@ input {
 }
 
 .general {
-  background-image: url(img/general.png);
+  background-image: url(../img/general.png);
   background-size: cover;
   height: 822px;
   margin-bottom: 1%;
