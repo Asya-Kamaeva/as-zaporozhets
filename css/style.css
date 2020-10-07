@@ -251,7 +251,7 @@ input {
 }
 
 .general {
-  background-image: url(/img/general.png);
+  background-image: url(img/general.png);
   background-size: cover;
   height: 822px;
   margin-bottom: 1%;
@@ -977,19 +977,19 @@ input {
 }
 
 .about__tasks_hall {
-  background-image: url(/img/tasks.png);
+  background-image: url(img/tasks.png);
 }
 
 .about__tasks_room {
-  background-image: url(/img/room.png);
+  background-image: url(img/room.png);
 }
 
 .about__tasks_kitchen {
-  background-image: url(/img/kitchen.png);
+  background-image: url(img/kitchen.png);
 }
 
 .about__tasks_bathroom {
-  background-image: url(/img/bathroom.png);
+  background-image: url(img/bathroom.png);
 }
 
 .about__tasks_active {
