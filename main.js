@@ -14,6 +14,7 @@ const sliderBlock = document.getElementById("slider");
 const sliderPart = document.getElementById("sliderPart");
 
 const sliderImg = document.querySelectorAll(".slider__img");
+let widthBrowther = document.documentElement.clientWidth;
 
 //hamburger menu
 
@@ -30,19 +31,22 @@ hamburger.addEventListener('click', function () {
 
   navItems.forEach(function(navItem, index) {
     navItem.addEventListener('click', function(){
-        nav.classList.toggle("nav_active");
+        if (widthBrowther <= 768){
+            nav.classList.toggle("nav_active");
         hamburger.classList.toggle("hamburger_active");
         if(nav.classList.contains('nav_active')){
           body.style.overflow="hidden";
         }else{
           body.style.overflow="auto";
-        }        
+        }
+        }
+                
     });
 });
 
 //change width about-img block
 
-let widthBrowther = document.documentElement.clientWidth;
+
 if (widthBrowther <= 768){
     imgBlock.style.width = widthBrowther +'px';
     
