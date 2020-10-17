@@ -10,6 +10,10 @@ const navItems = document.querySelectorAll('.nav__item');
 const nav = document.querySelector(".nav");
 const imgBlock = document.getElementById("aboutImg");
 const imgItem = document.querySelectorAll(".about__tasks");
+const sliderBlock = document.getElementById("slider");
+const sliderPart = document.getElementById("sliderPart");
+
+const sliderImg = document.querySelectorAll(".slider__img");
 
 //hamburger menu
 
@@ -46,6 +50,13 @@ if (widthBrowther <= 768){
         let newHeight = widthBrowther * 0.5639204;
         item.style.height = newHeight + 'px';
     })
+
+    sliderBlock.style.width = widthBrowther - 40+'px';
+    sliderPart.style.width = widthBrowther - 80+'px';
+    sliderImg.forEach(function(item){
+        item.style.width = widthBrowther - 80+'px';
+    })
+    
     
 }
 
@@ -57,6 +68,12 @@ window.onresize = function(){
         imgItem.forEach(function(item){
             let newHeight = widthBrowther * 0.5639204;
             item.style.height = newHeight + 'px';
+        })
+
+        sliderBlock.style.width = widthBrowther - 40+'px';
+        sliderPart.style.width = widthBrowther - 80+'px';
+        sliderImg.forEach(function(item){
+            item.style.width = widthBrowther - 80+'px';
         })
     
     }
