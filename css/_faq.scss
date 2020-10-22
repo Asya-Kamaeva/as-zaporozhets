@@ -94,6 +94,44 @@
         grid-gap: 2% 5%;
         min-height: 280px;
 
+        
+
+        @include desc{
+            width: 100%;
+            margin-left: 0;
+            padding: 2% 7% 6%;
+        }
+
+        @include tablets{
+            grid-template-columns: 1fr;
+            -ms-grid-columns: 1fr;
+            grid-gap: inherit;
+            padding-left: 10%;
+            min-height: initial;
+            grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
+            -ms-grid-rows: max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content;
+            grid-template-rows: max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content;
+           
+        }
+        @include phones{
+            font-size: 15px;
+        }
+
+        &_active{
+            display: grid;
+            display: -ms-grid;
+        }
+    }
+
+    &__unit{
+        cursor: pointer;
+        list-style-type: inherit;
+        margin-bottom: 1%;
+
+        @include phones{
+            margin-bottom: 2%;
+        }
+
         &:nth-child(1){
             -ms-grid-columns: 1;
             -ms-grid-rows: 1;
@@ -138,42 +176,6 @@
         &:nth-child(11){
             -ms-grid-columns: 2;
             -ms-grid-rows: 5;
-        }
-
-        @include desc{
-            width: 100%;
-            margin-left: 0;
-            padding: 2% 7% 6%;
-        }
-
-        @include tablets{
-            grid-template-columns: 1fr;
-            -ms-grid-columns: 1fr;
-            grid-gap: inherit;
-            padding-left: 10%;
-            min-height: initial;
-            grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
-            -ms-grid-rows: max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content;
-            grid-template-rows: max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content;
-           
-        }
-        @include phones{
-            font-size: 15px;
-        }
-
-        &_active{
-            display: grid;
-            display: -ms-grid;
-        }
-    }
-
-    &__unit{
-        cursor: pointer;
-        list-style-type: inherit;
-        margin-bottom: 1%;
-
-        @include phones{
-            margin-bottom: 2%;
         }
 
     }
