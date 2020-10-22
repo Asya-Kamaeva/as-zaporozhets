@@ -2293,58 +2293,58 @@ input {
 }
 
 .faq__unit:nth-child(1) {
-  -ms-grid-columns: 1;
-  -ms-grid-rows: 1;
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
 }
 
 .faq__unit:nth-child(2) {
-  -ms-grid-columns: 1;
-  -ms-grid-rows: 2;
+  -ms-grid-column: 1;
+  -ms-grid-row: 2;
 }
 
 .faq__unit:nth-child(3) {
-  -ms-grid-columns: 1;
-  -ms-grid-rows: 3;
+  -ms-grid-column: 1;
+  -ms-grid-row: 3;
 }
 
 .faq__unit:nth-child(4) {
-  -ms-grid-columns: 1;
-  -ms-grid-rows: 4;
+  -ms-grid-column: 1;
+  -ms-grid-row: 4;
 }
 
 .faq__unit:nth-child(5) {
-  -ms-grid-columns: 1;
-  -ms-grid-rows: 5;
+  -ms-grid-column: 1;
+  -ms-grid-row: 5;
 }
 
 .faq__unit:nth-child(6) {
-  -ms-grid-columns: 1;
-  -ms-grid-rows: 6;
+  -ms-grid-column: 1;
+  -ms-grid-row: 6;
 }
 
 .faq__unit:nth-child(7) {
-  -ms-grid-columns: 2;
-  -ms-grid-rows: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
 }
 
 .faq__unit:nth-child(8) {
-  -ms-grid-columns: 2;
-  -ms-grid-rows: 2;
+  -ms-grid-column: 2;
+  -ms-grid-row: 2;
 }
 
 .faq__unit:nth-child(9) {
-  -ms-grid-columns: 2;
-  -ms-grid-rows: 3;
+  -ms-grid-column: 2;
+  -ms-grid-row: 3;
 }
 
 .faq__unit:nth-child(10) {
-  -ms-grid-columns: 2;
-  -ms-grid-rows: 4;
+  -ms-grid-column: 2;
+  -ms-grid-row: 4;
 }
 
 .faq__unit:nth-child(11) {
-  -ms-grid-columns: 2;
-  -ms-grid-rows: 5;
+  -ms-grid-column: 2;
+  -ms-grid-row: 5;
 }
 
 .faq__question {
