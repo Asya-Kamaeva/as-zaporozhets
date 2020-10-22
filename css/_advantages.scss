@@ -54,7 +54,8 @@
 
         @include desc{
             width: 90px;
-            object-fit: contain;
+            -o-object-fit: contain;
+               object-fit: contain;
         }
 
         @include tablets{

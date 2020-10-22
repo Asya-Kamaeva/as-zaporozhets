@@ -11,6 +11,7 @@
     @include phones{
         display: grid;
         grid-template-columns: 4fr 1fr 1fr;
+        grid-template-rows: -webkit-max-content -webkit-max-content;
         grid-template-rows: max-content max-content;
     }
 

@@ -28,7 +28,8 @@
 
     &__icon{
         @include tablets{
-            object-fit: contain;
+            -o-object-fit: contain;
+               object-fit: contain;
             width: 22px;
         }
     }
