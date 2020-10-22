@@ -2297,8 +2297,6 @@ input {
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-row: 1;
 }
 
 .faq__unit:nth-child(2) {
@@ -2306,8 +2304,6 @@ input {
   grid-column: 1;
   -ms-grid-row: 2;
   grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-row: 2;
 }
 
 .faq__unit:nth-child(3) {
@@ -2315,8 +2311,6 @@ input {
   grid-column: 1;
   -ms-grid-row: 3;
   grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-row: 3;
 }
 
 .faq__unit:nth-child(4) {
@@ -2324,8 +2318,6 @@ input {
   grid-column: 1;
   -ms-grid-row: 4;
   grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-row: 4;
 }
 
 .faq__unit:nth-child(5) {
@@ -2333,8 +2325,6 @@ input {
   grid-column: 1;
   -ms-grid-row: 5;
   grid-row: 5;
-  -ms-grid-column: 1;
-  -ms-grid-row: 5;
 }
 
 .faq__unit:nth-child(6) {
@@ -2342,8 +2332,6 @@ input {
   grid-column: 1;
   -ms-grid-row: 6;
   grid-row: 6;
-  -ms-grid-column: 1;
-  -ms-grid-row: 6;
 }
 
 .faq__unit:nth-child(7) {
@@ -2351,8 +2339,6 @@ input {
   grid-column: 2;
   -ms-grid-row: 1;
   grid-row: 1;
-  -ms-grid-column: 2;
-  -ms-grid-row: 1;
 }
 
 .faq__unit:nth-child(8) {
@@ -2360,8 +2346,6 @@ input {
   grid-column: 2;
   -ms-grid-row: 2;
   grid-row: 2;
-  -ms-grid-column: 2;
-  -ms-grid-row: 2;
 }
 
 .faq__unit:nth-child(9) {
@@ -2369,8 +2353,6 @@ input {
   grid-column: 2;
   -ms-grid-row: 3;
   grid-row: 3;
-  -ms-grid-column: 2;
-  -ms-grid-row: 3;
 }
 
 .faq__unit:nth-child(10) {
@@ -2378,8 +2360,6 @@ input {
   grid-column: 2;
   -ms-grid-row: 4;
   grid-row: 4;
-  -ms-grid-column: 2;
-  -ms-grid-row: 4;
 }
 
 .faq__unit:nth-child(11) {
@@ -2387,8 +2367,6 @@ input {
   grid-column: 2;
   -ms-grid-row: 5;
   grid-row: 5;
-  -ms-grid-column: 2;
-  -ms-grid-row: 5;
 }
 
 .faq__question {
