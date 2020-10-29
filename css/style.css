@@ -131,11 +131,13 @@ input {
 @font-face {
   font-family: Intro;
   src: url(../fonts/8439.ttf);
+  src: url(../fonts/8439.woff);
 }
 
 @font-face {
   font-family: Myriad Pro;
   src: url(../fonts/8143.otf);
+  src: url(../fonts/8143.woff);
 }
 
 .hamburger {
