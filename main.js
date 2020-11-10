@@ -7,6 +7,7 @@ const cleanImage = document.querySelectorAll('.about__tasks');
 const body = document.body;
 const hamburger = document.querySelector(".hamburger");
 const navItems = document.querySelectorAll('.nav__item');
+const navItems2 = Array.prototype.slice.call(navItems);
 const nav = document.querySelector(".nav");
 const imgBlock = document.getElementById("aboutImg");
 const imgItem = document.querySelectorAll(".about__tasks");
@@ -29,7 +30,7 @@ hamburger.addEventListener('click', function () {
     
   });
 
-  navItems.forEach(function(navItem, index) {
+  navItems2.forEach(function(navItem, index) {
     navItem.addEventListener('click', function(){
         if (widthBrowther <= 768){
             nav.classList.toggle("nav_active");
