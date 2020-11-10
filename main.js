@@ -1,8 +1,11 @@
 const date = document.getElementById("date");
 const arrFaq = document.querySelectorAll(".faq__item");
+const arrFaq2 = Array.prototype.slice.call(arrFaq);
 const arrQuestions = document.querySelectorAll('.faq__part');
 const question = document.querySelectorAll('.faq__unit');
+const question2 = Array.prototype.slice.call(question);
 const cleanItem = document.querySelectorAll('.about__item');
+const cleanItem2 = Array.prototype.slice.call(cleanItem);
 const cleanImage = document.querySelectorAll('.about__tasks');
 const body = document.body;
 const hamburger = document.querySelector(".hamburger");
@@ -11,10 +14,11 @@ const navItems2 = Array.prototype.slice.call(navItems);
 const nav = document.querySelector(".nav");
 const imgBlock = document.getElementById("aboutImg");
 const imgItem = document.querySelectorAll(".about__tasks");
+const imgItem2 = Array.prototype.slice.call(imgItem);
 const sliderBlock = document.getElementById("slider");
 const sliderPart = document.getElementById("sliderPart");
-
 const sliderImg = document.querySelectorAll(".slider__img");
+const sliderImg2 = Array.prototype.slice.call(sliderImg);
 let widthBrowther = document.documentElement.clientWidth;
 
 //hamburger menu
@@ -51,14 +55,14 @@ hamburger.addEventListener('click', function () {
 if (widthBrowther <= 768){
     imgBlock.style.width = widthBrowther +'px';
     
-    imgItem.forEach(function(item){
+    imgItem2.forEach(function(item){
         let newHeight = widthBrowther * 0.5639204;
         item.style.height = newHeight + 'px';
     })
 
     sliderBlock.style.width = widthBrowther - 40+'px';
     sliderPart.style.width = widthBrowther - 80+'px';
-    sliderImg.forEach(function(item){
+    sliderImg2.forEach(function(item){
         item.style.width = widthBrowther - 80+'px';
     })
     
@@ -70,14 +74,14 @@ window.onresize = function(){
     if (widthBrowther <= 768){
         imgBlock.style.width = widthBrowther +'px';
         
-        imgItem.forEach(function(item){
+        imgItem2.forEach(function(item){
             let newHeight = widthBrowther * 0.5639204;
             item.style.height = newHeight + 'px';
         })
 
         sliderBlock.style.width = widthBrowther - 40+'px';
         sliderPart.style.width = widthBrowther - 80+'px';
-        sliderImg.forEach(function(item){
+        sliderImg2.forEach(function(item){
             item.style.width = widthBrowther - 80+'px';
         })
     
@@ -95,7 +99,7 @@ date.innerHTML = todayNew;
 
 //about-clean block
 
-cleanItem.forEach(function(item, index){
+cleanItem2.forEach(function(item, index){
     item.addEventListener('click', function(){
         let cleanItemActive = document.querySelectorAll('.about__item_active');
         if(cleanItemActive.length !=0){
@@ -116,7 +120,7 @@ cleanItem.forEach(function(item, index){
 
 //faq
 
-arrFaq.forEach(function (item, index) {
+arrFaq2.forEach(function (item, index) {
     item.addEventListener('click', function(){
         if(!item.className.includes('faq__item_active')){
             let faqActive = document.querySelectorAll('.faq__item_active');
@@ -135,7 +139,7 @@ arrFaq.forEach(function (item, index) {
     });
 });
 
-question.forEach(function(item, index) {
+question2.forEach(function(item, index) {
     item.addEventListener('click', function(){
         let activeQuestion = item.getElementsByClassName('faq__answer');
        
