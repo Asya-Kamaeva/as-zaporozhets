@@ -122,7 +122,11 @@ cleanItem2.forEach(function(item, index){
 
 arrFaq2.forEach(function (item, index) {
     item.addEventListener('click', function(){
-        if(!item.className.includes('faq__item_active')){
+        // if(!item.className.includes('faq__item_active')){
+        //     let faqActive = document.querySelectorAll('.faq__item_active');
+        //     faqActive[0].classList.remove('faq__item_active');
+        // };
+        if(item.className.indexOf('faq__item_active')== -1){
             let faqActive = document.querySelectorAll('.faq__item_active');
             faqActive[0].classList.remove('faq__item_active');
         };
@@ -130,7 +134,11 @@ arrFaq2.forEach(function (item, index) {
        
         let itemUnit = arrQuestions[index];
 
-        if(!itemUnit.className.includes('faq__part_active')){
+        // if(!itemUnit.className.includes('faq__part_active')){
+        //     let itemActive = document.querySelectorAll('.faq__part_active');
+        //     itemActive[0].classList.remove('faq__part_active');
+        // };
+        if(itemUnit.className.indexOf('faq__part_active') == -1){
             let itemActive = document.querySelectorAll('.faq__part_active');
             itemActive[0].classList.remove('faq__part_active');
         };
@@ -143,7 +151,8 @@ question2.forEach(function(item, index) {
     item.addEventListener('click', function(){
         let activeQuestion = item.getElementsByClassName('faq__answer');
        
-        if (activeQuestion[0].className.includes('faq__answer_active')){
+        // if (activeQuestion[0].className.includes('faq__answer_active')){
+        if (activeQuestion[0].className.indexOf('faq__answer_active')>=0){
             activeQuestion[0].classList.remove('faq__answer_active');
         } else {
             let unitActive = document.querySelectorAll('.faq__answer_active');
