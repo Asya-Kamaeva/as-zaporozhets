@@ -199,9 +199,11 @@
         }
 
         @include phones{
-            flex-direction: initial;
+            flex-direction: row;
             justify-content: space-between;
         }
+
+        
 
         &_part{
             font-size: 16px;
