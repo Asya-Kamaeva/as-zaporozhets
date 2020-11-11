@@ -22,8 +22,8 @@
   
 }
 
-@mixin ie{
-  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@mixin ie-phones{
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 480px) {
     @content;
  }
 }

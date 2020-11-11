@@ -892,7 +892,7 @@ input {
   }
 }
 
-@media screen and (-ms-high-contrast: active) and (max-width: 480px), screen and (-ms-high-contrast: none) and (max-width: 480px) {
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 480px) {
   .about__list {
     display: -webkit-box;
     display: -ms-flexbox;

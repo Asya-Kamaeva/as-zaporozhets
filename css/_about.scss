@@ -64,12 +64,10 @@
             grid-template-rows: 1fr 1fr;
         }
 
-        @include ie{
+        @include ie-phones{
 
-            @include phones{
-                display: flex;
-                flex-direction: column;
-            }
+            display: flex;
+            flex-direction: column;
         }
     }
 
