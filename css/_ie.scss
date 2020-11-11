@@ -1,7 +1,0 @@
-.ie .about__list{
-    @include phones{
-        display: flex;
-        flex-direction: column;
-    }
-    
-}
