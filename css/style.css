@@ -2341,9 +2341,9 @@ input {
     grid-gap: inherit;
     padding-left: 10%;
     min-height: initial;
-    grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
-    -ms-grid-rows: max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content;
-    grid-template-rows: max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content;
+    -ms-grid-rows: (max-content)[11];
+        grid-template-rows: repeat(11, -webkit-max-content);
+        grid-template-rows: repeat(11, max-content);
   }
 }
 
@@ -2370,81 +2370,106 @@ input {
   }
 }
 
-.faq__unit:nth-child(1) {
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 1;
-  grid-row: 1;
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .faq__unit:nth-child(1) {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .faq__unit:nth-child(2) {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .faq__unit:nth-child(3) {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .faq__unit:nth-child(4) {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .faq__unit:nth-child(5) {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 5;
+    grid-row: 5;
+  }
+  .faq__unit:nth-child(6) {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 6;
+    grid-row: 6;
+  }
+  .faq__unit:nth-child(7) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .faq__unit:nth-child(8) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .faq__unit:nth-child(9) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .faq__unit:nth-child(10) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .faq__unit:nth-child(11) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 5;
+    grid-row: 5;
+  }
 }
 
-.faq__unit:nth-child(2) {
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 2;
-  grid-row: 2;
-}
-
-.faq__unit:nth-child(3) {
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 3;
-  grid-row: 3;
-}
-
-.faq__unit:nth-child(4) {
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 4;
-  grid-row: 4;
-}
-
-.faq__unit:nth-child(5) {
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 5;
-  grid-row: 5;
-}
-
-.faq__unit:nth-child(6) {
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 6;
-  grid-row: 6;
-}
-
-.faq__unit:nth-child(7) {
-  -ms-grid-column: 2;
-  grid-column: 2;
-  -ms-grid-row: 1;
-  grid-row: 1;
-}
-
-.faq__unit:nth-child(8) {
-  -ms-grid-column: 2;
-  grid-column: 2;
-  -ms-grid-row: 2;
-  grid-row: 2;
-}
-
-.faq__unit:nth-child(9) {
-  -ms-grid-column: 2;
-  grid-column: 2;
-  -ms-grid-row: 3;
-  grid-row: 3;
-}
-
-.faq__unit:nth-child(10) {
-  -ms-grid-column: 2;
-  grid-column: 2;
-  -ms-grid-row: 4;
-  grid-row: 4;
-}
-
-.faq__unit:nth-child(11) {
-  -ms-grid-column: 2;
-  grid-column: 2;
-  -ms-grid-row: 5;
-  grid-row: 5;
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 768px) {
+  .faq__unit:nth-child(7) {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 7;
+    grid-row: 7;
+  }
+  .faq__unit:nth-child(8) {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 8;
+    grid-row: 8;
+  }
+  .faq__unit:nth-child(9) {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 9;
+    grid-row: 9;
+  }
+  .faq__unit:nth-child(10) {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 10;
+    grid-row: 10;
+  }
+  .faq__unit:nth-child(11) {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 11;
+    grid-row: 11;
+  }
 }
 
 .faq__question {
