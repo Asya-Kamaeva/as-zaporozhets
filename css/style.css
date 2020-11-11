@@ -2659,6 +2659,12 @@ input {
   object-fit: contain;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .slider__item {
+    min-width: 100%;
+  }
+}
+
 .slider__img {
   -o-object-fit: contain;
   object-fit: contain;

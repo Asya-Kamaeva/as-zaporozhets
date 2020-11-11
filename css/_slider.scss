@@ -117,6 +117,10 @@
         overflow: hidden;
         -o-object-fit: contain;
            object-fit: contain;
+
+           @include ie{
+               min-width: 100%;
+           }
     
     }
 
