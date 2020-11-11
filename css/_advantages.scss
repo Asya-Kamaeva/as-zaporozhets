@@ -37,6 +37,32 @@
         flex-direction: column;
         align-items: center;
 
+        &:nth-child(1){
+            @include tablets{
+                grid-column: 1;
+                grid-row: 1;
+            }
+        }
+        &:nth-child(2){
+            @include tablets{
+                grid-column: 2;
+                grid-row: 1;
+            }   
+        }
+        &:nth-child(3){
+            @include tablets{
+                grid-column: 1;
+                grid-row: 2;
+            }
+        }
+        &:nth-child(4){
+            @include tablets{
+                grid-column: 2;
+                grid-row: 2;
+            }
+        }
+
+
         @include desc{
             width: 22%;
         }
