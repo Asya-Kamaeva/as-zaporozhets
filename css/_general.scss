@@ -1,7 +1,7 @@
 .general{
     background-image: url(../img/general.png);
     background-size: cover;
-    height: 822px;
+    height: 865px;
     margin-bottom: 1%;
 
     @include desc{
@@ -10,7 +10,7 @@
     }
     
     @include tablets{
-        height: 690px;
+        height: 720px;
     }
 
     @include phones{

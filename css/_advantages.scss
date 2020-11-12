@@ -85,6 +85,14 @@
         align-items: flex-end;
         justify-content: center;
 
+        img{
+            @include ie{
+                height: 100%;
+            }
+
+            
+        }
+
         @include desc{
             width: 90px;
             -o-object-fit: contain;
