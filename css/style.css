@@ -300,6 +300,12 @@ input {
           align-items: center;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 480px) {
+  .general__content {
+    display: block;
+  }
+}
+
 .general__block {
   margin-top: 15%;
   margin-bottom: 10%;
@@ -340,6 +346,12 @@ input {
     font-size: 26px;
     font-weight: 300;
     margin-bottom: 3%;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .general__title {
+    overflow: auto;
   }
 }
 

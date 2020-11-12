@@ -22,6 +22,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include ie-phones{
+            display: block;
+        }
     }
 
     &__block{
@@ -56,6 +60,10 @@
             font-size: 26px;
             font-weight: 300;
             margin-bottom: 3%;
+        }
+
+        @include ie{
+            overflow: auto;
         }
     }
 
