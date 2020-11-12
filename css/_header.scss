@@ -43,6 +43,10 @@
             color: #82eaad;
         }
 
+        @include ie{
+            display: block;
+        }
+
     }
 
     &__phone{
@@ -62,6 +66,10 @@
             text-align: left;
             grid-column: 1;
             grid-row: 2;
+        }
+
+        @include ie{
+            display: block;
         }
         
     }
@@ -89,7 +97,8 @@
         }
 
         @include ie-phones{
-            grid-row: 1;
+            display: block;
+            grid-row: 2;
             grid-column: 2;
         }
 
