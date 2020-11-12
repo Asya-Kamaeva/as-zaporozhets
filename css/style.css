@@ -270,7 +270,7 @@ input {
 
 @media screen and (max-width: 1024px) {
   .general {
-    height: 730px;
+    height: 770px;
   }
 }
 
@@ -2158,6 +2158,12 @@ input {
   }
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .advantages__item {
+    display: block;
+  }
+}
+
 .advantages__img {
   height: 126px;
   width: 127px;
@@ -2193,6 +2199,14 @@ input {
   .advantages__img {
     width: 50px;
     height: 70px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .advantages__img {
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
