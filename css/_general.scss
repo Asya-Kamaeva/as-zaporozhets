@@ -62,9 +62,6 @@
             margin-bottom: 3%;
         }
 
-        @include ie{
-            overflow: auto;
-        }
     }
 
     &__desc{

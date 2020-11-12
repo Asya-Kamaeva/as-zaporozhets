@@ -349,12 +349,6 @@ input {
   }
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .general__title {
-    overflow: auto;
-  }
-}
-
 .general__desc {
   font-size: 36px;
   letter-spacing: 0.36px;
